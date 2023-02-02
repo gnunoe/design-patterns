@@ -11,6 +11,10 @@ it.
 them interchangeable. Strategy lets the algorithm vary independently from
 clients that use it.
 
+* Observer: defines a one-to-many dependencies between objects so that when
+one object changes state, all its dependants are notified and updated
+automatically
+
 ## Dependencies
 * gtest: included as submodule
 
