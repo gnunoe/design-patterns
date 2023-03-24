@@ -15,6 +15,9 @@ clients that use it.
 one object changes state, all its dependants are notified and updated
 automatically
 
+* Decorator: attaches additional responsabilities to an object dynamically.
+They provide a flexible alternative to subclassing for extending functionality.
+
 ## Dependencies
 * gtest: included as submodule
 
