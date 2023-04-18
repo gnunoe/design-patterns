@@ -6,6 +6,7 @@ project("DesignPatterns" VERSION 1.0.0)
 add_subdirectory(${PROJECT_SOURCE_DIR}/strategy)
 add_subdirectory(${PROJECT_SOURCE_DIR}/observer)
 add_subdirectory(${PROJECT_SOURCE_DIR}/decorator)
+add_subdirectory(${PROJECT_SOURCE_DIR}/factory)
 
 # Add Gtest framework
 add_subdirectory(${PROJECT_SOURCE_DIR}/googletest)

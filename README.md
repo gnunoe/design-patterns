@@ -18,6 +18,14 @@ automatically
 * Decorator: attaches additional responsabilities to an object dynamically.
 They provide a flexible alternative to subclassing for extending functionality.
 
+* Factory:
+    * Simple Factory: is not a pattern, but a programming idiom.
+    * Factory Method: defines an interface for creating an object, but lets
+    subclasses decide which class to instantiate.
+    It lets a class defer instantiation to subclasses, relying on inheritance.
+    * Abstract Factory: provides an interface for creating families of related/dependent
+    objects without specifying their concrete classes. Relies on object composition.
+
 ## Object Oriented Principles
 
 * Encapsulate what varies
@@ -25,6 +33,11 @@ They provide a flexible alternative to subclassing for extending functionality.
 * Program to interfaces, not implementations
 * Strive for loosely coupled designs between objects that interact
 * Classes should be open for extension but closed for modification
+* Dependecy inversion: Depend upon abstractions. Do not depend upon concrete classes.
+(High level components should not depend upon low level components: both should depend upon abstractions). The guidelines to follow this principle follows:
+    * No variable should hold a reference to a concrete class: if you use new, you will be holding a referece to a concrete class
+    * No class should derive from a concrete class: derive from an abtraction or an interface
+    * No method should override any implemented method of its base classes
 
 ## Dependencies
 * gtest: included as submodule
