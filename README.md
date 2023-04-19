@@ -29,6 +29,15 @@ They provide a flexible alternative to subclassing for extending functionality.
 * Singleton: ensures a class has only one instance, and provides a global
 point of accesing it.
 
+* Command: encapsulates a request as an object, thereby letting you parameterize other
+objects with different requests, queue or log requests, and support undoable operations.
+Use it when you need to decouple an object making a request from the object that knows
+how to perform the request.
+
+* Null Object: useful when you we don't have a meaningful object to return, and yet we
+want to remove responsability for handling null from the client. We therefore create a
+dummy null object and initialize the required structures with it.
+
 ## Object Oriented Principles
 
 * Encapsulate what varies

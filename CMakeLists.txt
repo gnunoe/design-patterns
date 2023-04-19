@@ -8,6 +8,7 @@ add_subdirectory(${PROJECT_SOURCE_DIR}/observer)
 add_subdirectory(${PROJECT_SOURCE_DIR}/decorator)
 add_subdirectory(${PROJECT_SOURCE_DIR}/factory)
 add_subdirectory(${PROJECT_SOURCE_DIR}/singleton)
+add_subdirectory(${PROJECT_SOURCE_DIR}/command)
 
 # Add Gtest framework
 add_subdirectory(${PROJECT_SOURCE_DIR}/googletest)
