@@ -26,6 +26,9 @@ They provide a flexible alternative to subclassing for extending functionality.
     * Abstract Factory: provides an interface for creating families of related/dependent
     objects without specifying their concrete classes. Relies on object composition.
 
+* Singleton: ensures a class has only one instance, and provides a global
+point of accesing it.
+
 ## Object Oriented Principles
 
 * Encapsulate what varies
