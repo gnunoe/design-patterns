@@ -38,6 +38,16 @@ how to perform the request.
 want to remove responsability for handling null from the client. We therefore create a
 dummy null object and initialize the required structures with it.
 
+* Adapter: converts the interface of a class into another interface the client expects.
+It lets classes work together that couldn't otherwise because of incompatible interfaces.
+    * Object Adapter: uses composition to adapt the adaptee to the client (by implementing
+    the interface the client expects, and holding an instance of the adaptee object)
+    * Class Adapter: uses multiple inheritance to adapt the adaptee to the client (by
+    inheriting from the the interface the cient expect and from the concrete class of the adaptee)
+
+* Facade: provides a unified interface to a set of interfaces in a subsystem. It defines a
+higher-level interface that makes the subsystem easier to use.
+
 ## Object Oriented Principles
 
 * Encapsulate what varies
@@ -50,6 +60,13 @@ dummy null object and initialize the required structures with it.
     * No variable should hold a reference to a concrete class: if you use new, you will be holding a referece to a concrete class
     * No class should derive from a concrete class: derive from an abtraction or an interface
     * No method should override any implemented method of its base classes
+* Least knowledge: talk only to your inmediate friends.
+(Be carefull with the number of classes an object depends on and how it interact with them, to avoid coupled designs that will create system cascade changes)
+To follow this principle follows, invokes only method that belong to:
+    * The object itself
+    * Objects passed in as parameters to the method
+    * Objects created or instantiated within the class
+    * Components of the object (that is, objects with a HAS-A relationship)
 
 ## Dependencies
 * gtest: included as submodule
