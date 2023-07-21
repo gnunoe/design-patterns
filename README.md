@@ -48,6 +48,9 @@ It lets classes work together that couldn't otherwise because of incompatible in
 * Facade: provides a unified interface to a set of interfaces in a subsystem. It defines a
 higher-level interface that makes the subsystem easier to use.
 
+* Template Method: defines the skeleton of an algorithm in a method, deferring some steps to subclasses.
+It lests subclasses redefine certain steps of an algorithm without changing the algorithm's structure.
+
 ## Object Oriented Principles
 
 * Encapsulate what varies
@@ -67,6 +70,7 @@ To follow this principle follows, invokes only method that belong to:
     * Objects passed in as parameters to the method
     * Objects created or instantiated within the class
     * Components of the object (that is, objects with a HAS-A relationship)
+* Hollywood principle: Don´t call us, we will call you
 
 ## Dependencies
 * gtest: included as submodule
